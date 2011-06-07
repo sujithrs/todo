@@ -1,0 +1,10 @@
+Backbone TODO app with Rails 3.1 + template view + coffescript. This is based off of http://documentcloud.github.com/backbone/examples/todos/index.html.
+
+To run...
+
+bundle install
+rake db:migrate
+rails s
+
+Open http://localhost:3000/
+

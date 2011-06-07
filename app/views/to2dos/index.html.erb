@@ -1,0 +1,23 @@
+<h1>Listing to2dos</h1>
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @to2dos.each do |to2do| %>
+  <tr>
+    <td><%= to2do.content %></td>
+    <td><%= link_to 'Show', to2do %></td>
+    <td><%= link_to 'Edit', edit_to2do_path(to2do) %></td>
+    <td><%= link_to 'Destroy', to2do, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New To2do', new_to2do_path %>
